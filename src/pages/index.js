@@ -5,7 +5,8 @@ import React from 'react';
 function pages() {
   return (
     <div>
-        <h1>Alura Cases - Home</h1>
+        <h1>Alura Cases - Home Page</h1>
+        <a href="/faq">Ir para FAQ</a>
     </div>
   );
 }
