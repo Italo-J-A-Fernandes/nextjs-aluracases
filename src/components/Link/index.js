@@ -1,9 +1,10 @@
 import NextLink from 'next/link';
+import LinkEstilizado from '../LinkEstilizado';
 
 const Link = ({children, href, ...props}) => {
     return (
         <NextLink href={href} passHref>
-            <a {...props}>{children}</a>
+            <LinkEstilizado {...props}>{children}</LinkEstilizado>
         </NextLink>
     )
 }
