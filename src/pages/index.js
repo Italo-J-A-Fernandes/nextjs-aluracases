@@ -1,14 +1,14 @@
-import Link from "next/link";
+import Link from "../components/Link";
 
-function pages() {
+const HomePage = () => {
   return (
     <div>
         <h1>Alura Cases - Home Page</h1>
         <Link href="/faq">
-          <a>Ir para FAQ</a>
+          Ir para FAQ
         </Link>
     </div>
   );
 }
 
-export default pages;
+export default HomePage;

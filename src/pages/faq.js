@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from "../components/Link";
 
-function FAQPage() {
+const FAQPage = () => {
   return (
     <div>
         <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
         <Link href="/">
-            <a>Ir para Home</a>
+            Ir para Home
         </Link>
     </div>
   );
