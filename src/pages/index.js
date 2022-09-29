@@ -1,5 +1,15 @@
 import Link from "../components/Link";
 
+const GlobalStyled = () => {
+  return (
+    <style global jsx>{`
+      body {
+        font-family: sans-serif;
+      }
+    `}</style>
+  )
+}
+
 const Title = ({children, type}) => { 
   const Tag = type
   return (
@@ -10,7 +20,6 @@ const Title = ({children, type}) => {
       <style jsx>{`
         ${Tag} {
           color: green;
-          font-family: sans-serif;
         }
       `}</style>
     </>
@@ -20,6 +29,7 @@ const Title = ({children, type}) => {
 const HomePage = () => {
   return (
     <div>
+      <GlobalStyled />
         <Title type="h1">Alura Cases - Home Page</Title>
         <Link href="/faq">
           Ir para FAQ
