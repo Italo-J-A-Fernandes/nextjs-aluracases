@@ -10,7 +10,6 @@ const Title = ({children, type}) => {
       <style jsx>{`
         ${Tag} {
           color: green;
-          font-family: sans-serif;
         }
       `}</style>
     </>
