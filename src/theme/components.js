@@ -188,6 +188,7 @@ export function Text({ as, styleSheet, ...props }) {
     />
   )
 }
+
 Text.defaultProps = {
   styleSheet: {},
 };
@@ -204,6 +205,7 @@ export function Image({ as, ...props }) {
     <Box as={tag} {...imageProps} />
   );
 }
+
 Image.defaultProps = {
   styleSheet: {},
 };
@@ -233,6 +235,7 @@ export function Input({ as, styleSheet, ...props }) {
     <Text as={tag} styleSheet={finalStyleSheet} {...props} />
   );
 }
+
 Input.defaultProps = {
   styleSheet: {},
 };
@@ -276,6 +279,7 @@ export function Button({ as, styleSheet, ...props }) {
     <Text as={tag} styleSheet={finalStyleSheet} {...props} />
   );
 }
+
 Button.defaultProps = {
   styleSheet: {},
 };
