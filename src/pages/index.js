@@ -1,4 +1,5 @@
 import Link from "../components/Link";
+import Footer from "../components/Footer";
 
 const Title = ({children, type}) => { 
   const Tag = type
@@ -23,6 +24,7 @@ const HomePage = () => {
         <Link href="/faq">
           Ir para FAQ
         </Link>
+        <Footer />
     </div>
   );
 }
