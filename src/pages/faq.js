@@ -1,5 +1,9 @@
 import Link from "../components/Link";
 
+// SSG - Static Side Genaration
+// SSR - Server Side Rendering
+// ISG - Incremental Static Generation
+
 // getStaticProps para conteúdos que nunca vai mudar de fato estaticos que serão gerados somente no build do projeto
 // getServerSideProps pegar alterações, roda a cada novo acesso
 // em modo dev sempre roda a cada acesso
