@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from "../components/Link";
 
 // SSG - Static Side Genaration
@@ -25,20 +26,23 @@ export async function getServerSideProps() {
 const FAQPage = ({ faq }) => {
   return (
     <div>
-        <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
-        <Link href="/">
-            Ir para Home
-        </Link>
-        <ul>
-          {faq.map(({question, answer}) => (
-            <li key={question}>
-              <article>
-                <h2>{question}</h2>
-                <p>{answer}</p>
-              </article>
-            </li>
-          ))}
-        </ul>
+      <Head>
+        <title>FAQ - Alura Cases Site de Campanha</title>
+      </Head>
+      <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
+      <Link href="/">
+          Ir para Home
+      </Link>
+      <ul>
+        {faq.map(({question, answer}) => (
+          <li key={question}>
+            <article>
+              <h2>{question}</h2>
+              <p>{answer}</p>
+            </article>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
