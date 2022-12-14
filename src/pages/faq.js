@@ -1,5 +1,6 @@
-import Head from 'next/head';
-import Link from "../components/Link";
+import FAQScreen from '../screens/FAQScreen';
+
+export default FAQScreen; 
 
 // SSG - Static Side Genaration
 // SSR - Server Side Rendering
@@ -22,29 +23,3 @@ export async function getServerSideProps() {
     },
   }
 }
-
-const FAQPage = ({ faq }) => {
-  return (
-    <div>
-      <Head>
-        <title>FAQ - Alura Cases Site de Campanha</title>
-      </Head>
-      <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
-      <Link href="/">
-          Ir para Home
-      </Link>
-      <ul>
-        {faq.map(({question, answer}) => (
-          <li key={question}>
-            <article>
-              <h2>{question}</h2>
-              <p>{answer}</p>
-            </article>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default FAQPage;
